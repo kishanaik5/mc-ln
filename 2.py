@@ -36,3 +36,8 @@ print(y_pred)
 p = mean_squared_error(y_test,y_pred)
 a = 1 - (p/np.var(y_test))
 print(f"the accuracy of the model is: {a}")
+
+plt.plot(y_test[1:10],y_pred[1:10])
+plt.xlabel("actual value")
+plt.ylabel("predicted value")
+plt.show()
